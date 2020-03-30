@@ -65,8 +65,8 @@ class EastmoneySpider(scrapy.Spider):
         # print(data)
         for v in data['data']['diff']:
             item = DongfangcaifuItem()
-            # if v['f107'] in [5, 3]:
-            #     continue
+            if v['f107'] in [5, 3]:
+                continue
             for u_k, u_v in self.urls.items():
                 if u_v.find(v['f12']) >= 0:
                     item['area'] = u_k[:4]
