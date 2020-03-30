@@ -11,13 +11,6 @@ from .tools.PymysqlUtil import PymysqlUtil
 
 
 class DongfangcaifuPipeline(object):
-    __config = {
-        "host": "127.0.0.1",
-        "user": "root",
-        "password": "lcvip122911",
-        "database": "LQuant"
-    }
-
     def __init__(self):
         self.db = PymysqlUtil()
         # self.f = open("./eastmoney_pipeline.json", 'w')

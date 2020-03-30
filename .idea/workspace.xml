@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5c58fa6-36d4-4b51-b757-caa53b851f5a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+            <state relative-caret-position="268">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <element signature="e#195#206#0" expanded="true" />
               </folding>
@@ -57,11 +59,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="240">
+              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -91,6 +102,7 @@
       <find>http://50.push2.eastmoney.com/api/qt/clist/get?cb=jQuery11240839915950187746_1585402514702&amp;pn=2&amp;pz=20&amp;po=1&amp;np=1&amp;ut=bd1d9ddb04089700cf9c27f6f7426281&amp;fltt=2&amp;invt=2&amp;fid=f3&amp;fs=i:100.SX5E,i:100.FTSE,i:100.MCX,i:100.AXX,i:100.FCHI,i:100.GDAXI,i:100.RTS,i:100.IBEX,i:100.PSI20,i:100.OMXC20,i:100.BFX,i:100.AEX,i:100.WIG,i:100.OMXSPI,i:100.SSMI,i:100.HEX,i:100.OSEBX,i:100.ATX,i:100.MIB,i:100.ASE,i:100.ICEXI,i:100.PX,i:100.ISEQ&amp;fields=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f12,f13,f14,f15,f16,f17,f18,f20,f21,f23,f24,f25,f26,f22,f33,f11,f62,f128,f136,f115,f152,f124,f107&amp;_=1585402514747</find>
       <find>http://50.push2.eastmoney.com/api/qt/clist/get?cb=jQuery11240839915950187746_1585402514701&amp;pn=1&amp;pz=20&amp;po=1&amp;np=1&amp;ut=bd1d9ddb04089700cf9c27f6f7426281&amp;fltt=2&amp;invt=2&amp;fid=f3&amp;fs=i:100.UDI,i:100.BDI,i:100.CRB&amp;fields=f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f12,f13,f14,f15,f16,f17,f18,f20,f21,f23,f24,f25,f26,f22,f33,f11,f62,f128,f136,f115,f152,f124,f107&amp;_=1585402514771</find>
       <find>UDI</find>
+      <find>__config</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,8 +118,6 @@
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/spiders/eastmoney_pipeline.json" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/spiders/eastmoney.py" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/dbhelper.py" />
-        <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py" />
-        <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/items.py" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/spiders/build_index_base.py" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/spiders/eastmoney_pipeline.json" />
@@ -117,6 +127,9 @@
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/conf/prod.env.yml" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/pipelines.py" />
         <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/pipelines.py" />
+        <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py" />
+        <option value="$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -154,6 +167,13 @@
               <item name="dongfangcaifu" type="462c0819:PsiDirectoryNode" />
               <item name="dongfangcaifu" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuantScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuantScrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="dongfangcaifu" type="462c0819:PsiDirectoryNode" />
+              <item name="dongfangcaifu" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -201,7 +221,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -214,7 +234,7 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37951806" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37951806" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -344,16 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/conf/dev.env.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -387,11 +397,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        <state relative-caret-position="268">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="e#195#206#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dongfangcaifu/dongfangcaifu/tools/PymysqlUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>

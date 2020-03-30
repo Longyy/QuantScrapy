@@ -6,8 +6,8 @@ class PymysqlUtil(object):
     __config = {
         "host": "127.0.0.1",
         "user": "root",
-        "password": "123456",
-        "database": "scrapy",
+        "password": "lcvip122911",
+        "database": "LQuant",
         "autocommit": True
     }
 
