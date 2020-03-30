@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-scrapy crawl $1
+cd /root/QuantScrapy/dongfangcaifu/ && /usr/local/bin/scrapy crawl eastmoney -o run.csv
