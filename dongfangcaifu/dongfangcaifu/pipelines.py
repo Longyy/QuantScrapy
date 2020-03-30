@@ -38,7 +38,7 @@ class DongfangcaifuPipeline(object):
         # print(data)
         result = self.db.insert(sql, data)
         if not result:
-            print('插入失败！')
+            print('Insert Failed！')
 
         # self.f.write(json.dumps(dict(item), ensure_ascii=False) + ",\n")
         return item
