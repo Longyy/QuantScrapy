@@ -37,7 +37,7 @@ class ZijinSpider(scrapy.Spider):
         # 取最新存储的数据量
         with open("./lasttimeflag.txt", "r") as f:
             line = f.read(10000)
-            if line != "":
+            if line.strip() != "":
                 line = json.loads(line)
                 print("line", line)
                 if isinstance(line, dict) and str(today) in line.keys():
