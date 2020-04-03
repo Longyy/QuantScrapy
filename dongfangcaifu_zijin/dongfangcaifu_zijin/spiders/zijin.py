@@ -33,18 +33,21 @@ class ZijinSpider(scrapy.Spider):
             return
         # 取当前日期
         today = date.today()
+        # today = '2020-04-01'
         # 取最新存储的数据量
         with open("./lasttimeflag.txt", "r") as f:
-            line = f.read(100)
+            line = f.read(10000)
             if line != "":
                 line = json.loads(line)
-                print(line.keys())
+                print("line", line)
                 if isinstance(line, dict) and str(today) in line.keys():
                     if "nan" in line[str(today)].keys():
                         nan_day_cnt = line[str(today)]["nan"]
                     elif "bei" in line[str(today)].keys():
                         bei_day_cnt = line[str(today)]["bei"]
-
+            else:
+                line = {}
+        print("bei_day_cnt:", bei_day_cnt)
         # 处理北向数据
         bei_date = str(today)[0:4] + "-" + data["data"]["s2nDate"]
         # 只处理当天数据
@@ -58,8 +61,8 @@ class ZijinSpider(scrapy.Spider):
                         continue
                     part = str(s2n[i]).split(",")
                     item = DongfangcaifuZijinItem()
-                    item["zijin_type"] = 1
-                    item["last_time"] = str(today)[0:4] + "-" + str(part[0]) + ":00"
+                    item["zijin_type"] = 's2n'
+                    item["last_time"] = str(today) + " " + str(part[0]) + ":00"
                     item["hu_in"] = part[1]
                     item["hu_yu"] = part[2]
                     item["shen_in"] = part[3]
@@ -80,8 +83,8 @@ class ZijinSpider(scrapy.Spider):
                         continue
                     part = str(n2s[i]).split(",")
                     item = DongfangcaifuZijinItem()
-                    item["zijin_type"] = 2
-                    item["last_time"] = str(today)[0:4] + "-" + str(part[0]) + ":00"
+                    item["zijin_type"] = 'n2s'
+                    item["last_time"] = str(today) + " " + str(part[0]) + ":00"
                     item["hu_in"] = part[1]
                     item["hu_yu"] = part[2]
                     item["shen_in"] = part[3]
@@ -89,5 +92,6 @@ class ZijinSpider(scrapy.Spider):
                     item["inflow"] = part[5]
                     items.append(item)
         with open("./lasttimeflag.txt", "w") as f:
-            f.write(json.dumps({str(today): {"bei": len(s2n), "nan": len(n2s)}}))
+            line[str(today)] = {"bei": len(s2n), "nan": len(n2s)}
+            f.write(json.dumps(line))
         return items

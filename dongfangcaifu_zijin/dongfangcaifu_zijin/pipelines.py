@@ -19,11 +19,11 @@ class DongfangcaifuZijinPipeline(object):
         time_now = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         item['created_time'] = time_now
         sql = """
-        insert into zijin_in_out(type,hu_in,hu_yu,shen_in,shen_yu,inflow,
-        created_time) values (%s,%s,%s,%s,%s,%s,%s)
+        insert into zijin_in_out(type,hu_in,hu_yu,shen_in,shen_yu,inflow,last_time,
+        created_time) values (%s,%s,%s,%s,%s,%s,%s,%s)
         """
         data = (item['zijin_type'], item['hu_in'], item['hu_yu'], item['shen_in'], item['shen_yu'],
-                item['inflow'], item['created_time'])
+                item['inflow'], item['last_time'], item['created_time'])
         result = self.db.insert(sql, data)
         if not result:
             print('Insert Failed!')
