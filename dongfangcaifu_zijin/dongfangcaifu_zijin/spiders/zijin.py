@@ -39,15 +39,13 @@ class ZijinSpider(scrapy.Spider):
             line = f.read(10000)
             if line.strip() != "":
                 line = json.loads(line)
-                print("line", line)
                 if isinstance(line, dict) and str(today) in line.keys():
                     if "nan" in line[str(today)].keys():
                         nan_day_cnt = line[str(today)]["nan"]
-                    elif "bei" in line[str(today)].keys():
+                    if "bei" in line[str(today)].keys():
                         bei_day_cnt = line[str(today)]["bei"]
             else:
                 line = {}
-        print("bei_day_cnt:", bei_day_cnt)
         # 处理北向数据
         bei_date = str(today)[0:4] + "-" + data["data"]["s2nDate"]
         # 只处理当天数据
