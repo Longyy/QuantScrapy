@@ -61,3 +61,32 @@ class DapanPipeline(object):
         self.db.close()
         self.f.close()
 
+
+class DapandayPipeline(object):
+    def __init__(self):
+        self.db = PymysqlUtil()
+        self.f = open("./dapanday_pipeline.json", 'w')
+
+    def process_item(self, item, spider):
+        time_now = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
+        item['created_time'] = time_now
+        sql = """
+        insert into zijin_dapan(main_inflow,small_inflow,midum_inflow,big_inflow,huge_inflow,last_time,
+        created_time, main_rate,small_rate,midum_rate,big_rate,huge_rate) values (%s,%s,%s,%s,%s,%s,%s, %s,%s,%s,%s,%s)
+        """
+        data = (item['main_inflow'], item['small_inflow'], item['midum_inflow'], item['big_inflow'],
+                item['huge_inflow'], item['last_time'], item['created_time'], item['main_rate'],
+                item['small_rate'], item['midum_rate'], item['big_rate'],
+                item['huge_rate'], )
+        result = self.db.insert(sql, data)
+        if not result:
+            print('Insert Failed!')
+
+        self.f.write(json.dumps(dict(item), ensure_ascii=False) + ",\n")
+        return item
+
+    def close_spider(self, spider):
+        self.db.close()
+        self.f.close()
+
+

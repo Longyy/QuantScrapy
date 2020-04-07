@@ -67,6 +67,7 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
    'dongfangcaifu_zijin.pipelines.DongfangcaifuZijinPipeline': 300,
    'dongfangcaifu_zijin.pipelines.DapanPipeline': 301,
+   'dongfangcaifu_zijin.pipelines.DapandayPipeline': 302,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

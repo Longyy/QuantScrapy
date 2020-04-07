@@ -44,3 +44,29 @@ class DapanItem(scrapy.Item):
     # 今日超大单净流入
     huge_inflow = scrapy.Field()
 
+
+class DapandayItem(scrapy.Item):
+    # 最新行情时间
+    last_time = scrapy.Field()
+    # 爬取时间
+    created_time = scrapy.Field()
+    # 今日主力净流入
+    main_inflow = scrapy.Field()
+    # 今日小单净流入
+    small_inflow = scrapy.Field()
+    # 今日中单净流入
+    midum_inflow = scrapy.Field()
+    # 今日大单净流入
+    big_inflow = scrapy.Field()
+    # 今日超大单净流入
+    huge_inflow = scrapy.Field()
+    # 今日主力净占比
+    main_rate = scrapy.Field()
+    # 今日小单净占比
+    small_rate = scrapy.Field()
+    # 今日中单净占比
+    midum_rate = scrapy.Field()
+    # 今日大单净占比
+    big_rate = scrapy.Field()
+    # 今日超大单净占比
+    huge_rate = scrapy.Field()
