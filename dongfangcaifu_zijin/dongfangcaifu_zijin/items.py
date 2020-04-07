@@ -27,3 +27,20 @@ class DongfangcaifuZijinItem(scrapy.Item):
     # 北向资金当日净流入
     inflow = scrapy.Field()
 
+
+class DapanItem(scrapy.Item):
+    # 最新行情时间
+    last_time = scrapy.Field()
+    # 爬取时间
+    created_time = scrapy.Field()
+    # 今日主力净流入
+    main_inflow = scrapy.Field()
+    # 今日小单净流入
+    small_inflow = scrapy.Field()
+    # 今日中单净流入
+    midum_inflow = scrapy.Field()
+    # 今日大单净流入
+    big_inflow = scrapy.Field()
+    # 今日超大单净流入
+    huge_inflow = scrapy.Field()
+

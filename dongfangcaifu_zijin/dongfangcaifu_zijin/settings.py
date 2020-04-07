@@ -66,6 +66,7 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'dongfangcaifu_zijin.pipelines.DongfangcaifuZijinPipeline': 300,
+   'dongfangcaifu_zijin.pipelines.DapanPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
