@@ -34,7 +34,7 @@ class DapandaySpider(scrapy.Spider):
         result = re.findall(r"^jQuery[0-9_]*\((.+)\);$", response.text)[0]
         data = json.loads(result)
         if not isinstance(data, dict):
-            print("返回数据不是json格式！")
+            print("not json!")
             return
 
         with open("./lasttimeflag_dapanday.txt", "r") as f:
@@ -48,7 +48,7 @@ class DapandaySpider(scrapy.Spider):
         for i in range(len(data["data"]["klines"])):
             part = str(data["data"]["klines"][i]).split(",")
             if part[0] in line.keys():
-                print('当天数据已处理')
+                print('today is done.')
                 continue
             item = DapandayItem()
             item['last_time'] = part[0] + " 00:00:00"

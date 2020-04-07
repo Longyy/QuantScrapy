@@ -28,7 +28,7 @@ class DapanSpider(scrapy.Spider):
         result = re.findall(r"^jQuery[0-9_]*\((.+)\);$", response.text)[0]
         data = json.loads(result)
         if not isinstance(data, dict):
-            print("返回数据不是json格式！")
+            print("not json")
             return
         # 取当前日期
         today = date.today()
@@ -48,13 +48,13 @@ class DapanSpider(scrapy.Spider):
         for i in range(len(data["data"]["klines"])):
             part = str(data["data"]["klines"][i]).split(",")
             if len(part) != 6:
-                print('数据不全')
+                print('data format wrong')
                 continue
             if str(today) != part[0][:10]:
-                print('只处理当天数据')
+                print('date not correct')
                 continue
             if i+1 <= day_cnt:
-                print('没有新数据')
+                print('no new data')
                 continue
             item = DapanItem()
             item['last_time'] = part[0] + ":00"
